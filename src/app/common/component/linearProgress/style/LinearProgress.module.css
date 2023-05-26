@@ -1,0 +1,5 @@
+.root {
+  display: block;
+  background-color: var(--light-gray);
+  overflow: hidden;
+}

@@ -3,8 +3,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import Tab from "src/app/common/component/tab/Tab";
 
-const Home = React.memo(function Home() {
+const Curation = React.memo(function Curation() {
   return (
     <div>
       <div></div>
@@ -12,4 +13,4 @@ const Home = React.memo(function Home() {
   );
 });
 
-export default Home;
+export default Curation;

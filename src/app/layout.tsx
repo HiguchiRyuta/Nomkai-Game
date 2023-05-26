@@ -1,8 +1,7 @@
 import { ReactNode } from "react";
-import Link from "next/link";
 
-import styles from "src/app/common/style/commonStyle.module.css";
-import GenericLayout from "src/app/common/layout/generic/GenericLayout";
+import "../../styles/globals.css";
+import GenericLayout from "src/app/common/layout/genericLayout/GenericLayout";
 
 type Props = {
   children: ReactNode;
@@ -11,8 +10,15 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <html>
-      <head></head>
-      <body className={styles.root}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        ></link>
+      </head>
+      <body>
         <GenericLayout>{children}</GenericLayout>
       </body>
     </html>

@@ -1,0 +1,10 @@
+.root {
+  color: var(--base-font-color);
+  text-decoration: none;
+}
+.underline {
+  text-decoration: underline;
+}
+.active {
+  color: var(--main-color);
+}

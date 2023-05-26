@@ -1,5 +1,4 @@
 import { Emitter } from "src/common/libs/Emitter";
-import { mixins } from "src/common/util/mixins";
 
 type Position = {
   x: number;
@@ -141,5 +140,4 @@ class RouletteService extends Emitter {
   }
 }
 
-mixins(RouletteService, Emitter);
 export default RouletteService;
