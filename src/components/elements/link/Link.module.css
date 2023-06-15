@@ -1,0 +1,10 @@
+.root {
+  color: var(--pg-base-font);
+  text-decoration: none;
+}
+.underline {
+  text-decoration: underline;
+}
+.active {
+  color: var(--pg-spec-red-1);
+}

@@ -1,0 +1,20 @@
+.spinner[data-break-point="xs"] {
+  width: 150px;
+  height: 150px;
+}
+.spinner[data-break-point="sm"] {
+  width: 200px;
+  height: 200px;
+}
+.spinner[data-break-point="md"] {
+  width: 300px;
+  height: 300px;
+}
+.spinner[data-break-point="lg"] {
+  width: 450px;
+  height: 450px;
+}
+.spinner[data-break-point="xl"] {
+  width: 600px;
+  height: 600px;
+}

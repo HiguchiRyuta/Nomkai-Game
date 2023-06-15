@@ -1,7 +1,3 @@
-import React from "react";
-
-const WordWolf = React.memo(function WordWolf() {
-  return <></>;
-});
+import WordWolf from "src/features/games/word-wolf/WordWolf.page";
 
 export default WordWolf;

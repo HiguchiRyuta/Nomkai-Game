@@ -1,0 +1,5 @@
+.root {
+  display: block;
+  background-color: var(--pg-spec-white-4);
+  overflow: hidden;
+}

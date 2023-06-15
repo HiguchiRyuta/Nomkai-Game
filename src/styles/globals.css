@@ -1,0 +1,66 @@
+html {
+  font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Noto Sans JP, Roboto, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* height */
+  --pg-header-height: 3.5rem;
+  --pg-chip-height: 2.2rem;
+
+  /* colors */
+  --pg-spec-white-1: #fff;
+  --pg-spec-white-2: #f9f9f9;
+  --pg-spec-white-3: #f1f1f1;
+  --pg-spec-white-4: #e9e9e9;
+  --pg-spec-white-5: #e5e5e5;
+  --pg-spec-black-1: #282828;
+  --pg-spec-black-2: #1f1f1f;
+  --pg-spec-black-3: #161616;
+  --pg-spec-black-4: #0d0d0d;
+  --pg-spec-black-pure: #000;
+  --pg-spec-red-1: #e63740;
+
+  /* bg */
+  --pg-base-bg: #f7f7f7;
+  --pg-chip-hover-bg: rgba(255, 255, 255, 0.1);
+
+  --pg-chip-border-width: 1px;
+
+  /* font */
+  --pg-base-font: var(--pg-spec-black-3);
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}

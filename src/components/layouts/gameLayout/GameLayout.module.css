@@ -1,0 +1,9 @@
+.root {
+  display: block;
+  min-height: 100vh;
+  background-color: var(--pg-base-bg);
+  overflow: hidden;
+}
+.content {
+  margin-top: var(--pg-header-height);
+}

@@ -1,7 +1,3 @@
-import React from "react";
-
-const IndianPoker = React.memo(function IndianPoker() {
-  return <></>;
-});
+import IndianPoker from "src/features/games/indian-poker/IndianPoker.page";
 
 export default IndianPoker;
