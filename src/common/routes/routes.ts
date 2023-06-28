@@ -9,9 +9,6 @@ type Route = {
   path: string;
   makePath: MakePath;
 };
-type Routes = {
-  [key: string]: Route;
-};
 
 const makePath: MakePath = function (
   this: Route,
@@ -36,7 +33,7 @@ const makePath: MakePath = function (
   return path;
 };
 
-export const routes: Routes = {
+export const routes = {
   home: {
     path: "/",
     makePath: makePath,
@@ -45,8 +42,8 @@ export const routes: Routes = {
     path: "/curation",
     makePath: makePath,
   },
-  roulette: {
-    path: "/games/roulette",
+  games: {
+    path: "/games/:key",
     makePath: makePath,
   },
 };

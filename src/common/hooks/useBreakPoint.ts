@@ -2,7 +2,7 @@
 import { useState, useEffect, useCallback } from "react";
 import {
   BreakPointContextType,
-  BREAK_POINT_LEVEL,
+  BREAK_POINTS,
 } from "src/common/context/BreakPointContext/types";
 
 const useBreakPoint = () => {
@@ -11,13 +11,13 @@ const useBreakPoint = () => {
   const onResize = useCallback(() => {
     const width = window.innerWidth;
     let size: BreakPointContextType = "xl";
-    if (width < BREAK_POINT_LEVEL.sm) {
+    if (width < BREAK_POINTS.sm) {
       size = "xs";
-    } else if (width < BREAK_POINT_LEVEL.md) {
+    } else if (width < BREAK_POINTS.md) {
       size = "sm";
-    } else if (width < BREAK_POINT_LEVEL.lg) {
+    } else if (width < BREAK_POINTS.lg) {
       size = "md";
-    } else if (width < BREAK_POINT_LEVEL.xl) {
+    } else if (width < BREAK_POINTS.xl) {
       size = "lg";
     }
     setBreakPoint(size);

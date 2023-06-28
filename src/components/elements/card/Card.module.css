@@ -1,0 +1,25 @@
+.root {
+  color: var(--pg-base-font);
+  text-decoration: none;
+  border-radius: 8px;
+  border: var(--pg-chip-border-width) solid #bdbdbd;
+  background-color: var(--pg-spec-white-1);
+  height: var(--pg-chip-height);
+}
+.clickable {
+  cursor: pointer;
+}
+.clickable:hover {
+  background-color: var(--pg-chip-hover-bg);
+}
+.text {
+  padding: 0 0.5rem;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  line-height: calc(var(--pg-chip-height) - var(--pg-chip-border-width) * 2);
+}
+.active {
+  color: var(--pg-spec-red-1);
+  border-color: var(--pg-spec-red-1);
+}
