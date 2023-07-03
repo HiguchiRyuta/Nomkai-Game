@@ -14,7 +14,7 @@ const Header = React.memo(function Header() {
           alt="Party Game name logo"
           className={styles.logo}
           width={120}
-          height={25}
+          height={35}
           loading="eager"
         />
       </Link>
